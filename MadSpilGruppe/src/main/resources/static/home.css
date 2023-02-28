@@ -6,27 +6,32 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../static/Images/3.jpg");
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../static/Images/img.png");
+    background-size: contain;
     background-position: center;
 }
 .navbar{
-    width: 85%;
+    width: 100%;
     margin: auto;
-    padding: 35px 0;
+    padding: 0px 0;
     display: flex;
     align-items:center;
     justify-content: space-between;
 }
 .logo{
-    width: 85px;
+    height: 100px;
+    width: 100px;
     cursor: pointer;
     margin-top: 100px;
+    transform: translateY(-90%);
+    
+
 }
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
+    position: relative;
 }
 .navbar ul li a{
     text-decoration: none;
@@ -36,7 +41,7 @@
 .navbar ul li::after{
     content: '';
     height: 3px;
-    width: 0;
+    width: 0%;
     background: #009688;
     position: absolute;
     left: 0;
@@ -46,29 +51,42 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
-/* Home class */
-.hometext
-{
-    margin-top: 150px;
-}
-/* Home header*/
-.home h1
-{
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
-    background-color: darkgreen;
+    color: white;
 }
-/* listen */
-.list {
-    background-color: wheat;
-    border: 1px solid black;
-    padding: 10px;
-    opacity: 0.7;
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
-
-.list li {
-    opacity: 0.8;
-    color: black;
-    font-size: 25px;
-    margin: 10px 0;
+span{
+    background: lightsteelblue;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
 }
-/* */
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}

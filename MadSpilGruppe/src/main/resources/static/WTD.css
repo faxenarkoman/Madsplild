@@ -1,71 +1,61 @@
-.Back
-{
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner {
     width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url("../static/Images/FruitBackgground.png");
-    background-size: cover;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../static/Images/img_1.png");
+    background-size: contain;
     background-position: center;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 0px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 100px;
+    transform: translateY(-90%);
+
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
     position: relative;
 }
-
-.logo img
-{
-    width: 5%;
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
     position: absolute;
-    top: 0;
     left: 0;
-    margin-top: -25px;
-    margin-left: 15px;
-    margin-bottom: 10px;
+    bottom: -10px;
+    transition: 0.5s;
 }
-
-.h1 inframe
-{
-    max-width: 500px;
-    margin: auto;
+.navbar ul li:hover::after{
+    width: 100%;
 }
-
-/* Navigationsbar */
-.topnav {
-    background-color: green;
-    overflow: hidden;
-    margin-top: -25px;
-    margin-left: 75px;
-    margin-right: -10px;
-    justify-content: stretch;
-
-}
-
-/* Text indeni */
-.topnav a {
-    float: left;
-    color: white;
-    margin-top: 10px;
-    text-decoration: 1px;
-    font-size: 19px;
-    padding: 26px 150px 16px 14px;
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
-}
-
-/* Hover på navigation */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Activt link */
-.topnav a.active
-{
-    padding-top: 26px;
-    background-color: darkgreen;
     color: white;
 }
-
-/* Donate */
-form input[type="image"]
-{
-    margin-top: 35px;
-}
-
-
-
