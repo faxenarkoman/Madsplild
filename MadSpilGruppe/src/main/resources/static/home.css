@@ -1,16 +1,40 @@
-/* Logo */
-.logo img
-{
-    width: 5%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: -25px;
-    margin-left: 15px;
-    margin-bottom: 10px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../static/Images/3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo{
+    width: 85px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
 }
 /* Home class */
-.home
+.hometext
 {
     margin-top: 150px;
 }
@@ -19,56 +43,6 @@
 {
     text-align: center;
     background-color: darkgreen;
-}
-/* Image 1 */
-.home img
-{
-    opacity: 25%;
-    position: absolute;
-    display: flex;
-    margin-top: -150px;
-    width: 100%;
-    height: 100%;
-}
-/* Navigationsbar */
-.topnav {
-    background-color: green;
-    overflow: hidden;
-    margin-top: -25px;
-    margin-left: 75px;
-    margin-right: -10px;
-    justify-content: stretch;
-
-}
-/* Text indeni */
-.topnav a {
-    float: left;
-    color: white;
-    margin-top: 10px;
-    text-decoration: 1px;
-    font-size: 19px;
-    padding: 26px 150px 16px 14px;
-    text-align: center;
-
-}
-
-/* Hover på navigation */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Activt link */
-.topnav a.active {
-    padding-top: 26px;
-    background-color: darkgreen;
-    color: white;
-
-}
-/* Donate */
-form input[type="image"]
-{
-    margin-top: 35px;
 }
 /* listen */
 .list {

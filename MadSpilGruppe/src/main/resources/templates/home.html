@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta name="viewport" content="widht=device-width, initial-scale=1.0" />
 <link rel=stylesheet type="text/css" href="../static/home.css">
+<meta name="viewport" content="width=500, initial-scale=1" />
 <head>
 
     <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
@@ -11,45 +13,27 @@
 
 <!-- Navigationsbar !-->
 <body>
-<div class="topnav">
-    <a class="active" href="home.html">Hjem</a>
-    <a href="wtd.html">Hvad kan du gøre</a>
-    <a href="links.html">Hjælp siden</a>
-    <a href="contact.html">Kontakt os</a>
-    <div class="donate">
+<div class="background">
+</div>
+<div class="banner">
+<div class="navbar">
+<img src="../static/Images/logo.png" class="logo">
+    <ul>
+        <li><a href="home.html"> Hjem</a> </li>
+        <li><a href="WTD.html"> Hvad du kan gøre</a> </li>
+        <li><a href="#"> Doner</a> </li>
+    </ul>
 
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="2X2MGK9FFHLSQ" />
-        <input type="image" src="https://www.paypalobjects.com/da_DK/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Doner penge med PayPal-knappen" />
-        <img alt="donate" height="1" src="https://www.paypal.com/da_DK/i/scr/pixel.gif" width="1"/>
-    </form>
-    </div>
+</div>
 </div>
 
-<!-- Logo !-->
-<div class="logo">
-<img th:src="logo.png" src="../static/Images/logo.png" alt="logo">
-</div>
-
-<!-- Image 1 !-->
-<div class="container">
-    <div class="row">
-        <div class="column-66">
-<div class="home">
-<img th:src="3.jpg" src="../static/Images/3.jpg" alt="Madsplid">
+<div class="hometext">
     <h2>Fakta om madsplild</h2>
 <ul class="list">
     <li>Madspildet i den danske servicesektor udgør 227.000-ton pr. år. Til sammenligning er det samlede madspild fra husholdningerne 261.000-ton pr. år.</li>
     <li> Det største madspild i servicesektoren stammer fra detailhandelen, der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.</li>
     <li> detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger og grønthandlere for 12.000 tons pr. år, mens ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.</li>
 </ul>
-</div>
-            <div class="column-33">
-            </div>
-        </div>
-    </div>
-
-
 </div>
 <h1> Hvis du gerne vil vide mere om madsplild, så kan du se denne dokumentar</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6RlxySFrkIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

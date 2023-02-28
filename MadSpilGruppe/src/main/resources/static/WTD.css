@@ -1,8 +1,11 @@
-body {
-    background-image: url(../static/Images/FruitBackgground.png);
-    background-color: #cccccc;
-    background-repeat: no-repeat, repeat;
-    background-size: 100%;    
+.Back
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url("../static/Images/FruitBackgground.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .logo img
@@ -14,7 +17,6 @@ body {
     margin-top: -25px;
     margin-left: 15px;
     margin-bottom: 10px;
-
 }
 
 .h1 inframe
@@ -33,6 +35,7 @@ body {
     justify-content: stretch;
 
 }
+
 /* Text indeni */
 .topnav a {
     float: left;
@@ -42,7 +45,6 @@ body {
     font-size: 19px;
     padding: 26px 150px 16px 14px;
     text-align: center;
-
 }
 
 /* Hover på navigation */
@@ -52,7 +54,8 @@ body {
 }
 
 /* Activt link */
-.topnav a.active {
+.topnav a.active
+{
     padding-top: 26px;
     background-color: darkgreen;
     color: white;
