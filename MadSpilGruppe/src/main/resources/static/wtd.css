@@ -13,7 +13,7 @@
 .navbar{
     width: 100%;
     margin: auto;
-    padding: 0px 0;
+    padding: 0;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 .navbar ul li::after{
     content: '';
     height: 3px;
-    width: 0%;
+    width: 0;
     background: #009688;
     position: absolute;
     left: 0;
@@ -55,7 +55,7 @@
     width: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     text-align: center;
     color: white;
 }
