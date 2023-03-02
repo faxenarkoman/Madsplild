@@ -21,7 +21,7 @@
 .logo{
     height: 100px;
     width: 150px;
-    cursor: pointer;
+    cursor: auto;
     margin-top: 100px;
     transform: translateY(-90%);
 
